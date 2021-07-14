@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="envy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-07-10 06:20:01 PM"/>
+        <attribute name="created" value="ZW52eTtERVNLVE9QLUVGS0w1S0k7MjAyMS0wNy0xMDswNTozMzo1MiBQTTsyNzk5"/>
+        <attribute name="edited" value="ZW52eTtERVNLVE9QLUVGS0w1S0k7MjAyMS0wNy0xMDswNjoyMDowMSBQTTsyOzI4OTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="prn" type="Real" array="False" size=""/>
+            <declare name="rate" type="Real" array="False" size=""/>
+            <declare name="year" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="L" type="Integer" array="False" size=""/>
+            <declare name="nb" type="Real" array="False" size=""/>
+            <declare name="Time" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter principle amount&quot;" newline="True"/>
+            <input variable="prn"/>
+            <output expression="&quot;what is the rate of intrest&quot;" newline="True"/>
+            <input variable="rate"/>
+            <output expression="&quot;How many years?&quot;" newline="True"/>
+            <input variable="year"/>
+            <for variable="time" start="1" end="year" direction="inc" step="1">
+                <assign variable="i" expression="prn * rate"/>
+                <assign variable="nb" expression="i + prn"/>
+                <output expression="&quot;year = &quot; &amp; time" newline="True"/>
+                <output expression="&quot;starting amount was = &quot; &amp; prn" newline="True"/>
+                <output expression="&quot;you're ending balence of the year is = &quot; &amp; nb" newline="True"/>
+                <assign variable="prn" expression="nb"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

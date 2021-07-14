@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="envy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-07-12 10:37:24 AM"/>
+        <attribute name="created" value="ZW52eTtERVNLVE9QLUVGS0w1S0k7MjAyMS0wNy0xMDswNjo1Mjo1NSBQTTsyODA0"/>
+        <attribute name="edited" value="ZW52eTtERVNLVE9QLUVGS0w1S0k7MjAyMS0wNy0xMjsxMDozNzoyNCBBTTszOzI4OTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <declare name="y" type="Integer" array="False" size=""/>
+            <assign variable="y" expression="1"/>
+            <while expression="y &lt;= 5">
+                <for variable="x" start="1" end="10" direction="inc" step="1">
+                    <output expression="x" newline="True"/>
+                </for>
+                <assign variable="y" expression="y + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

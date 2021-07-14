@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="envy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-07-14 12:50:57 PM"/>
+        <attribute name="created" value="ZW52eTtERVNLVE9QLUVGS0w1S0k7MjAyMS0wNy0xMDswNjoyMDoxMCBQTTsyNzkw"/>
+        <attribute name="edited" value="ZW52eTtERVNLVE9QLUVGS0w1S0k7MjAyMS0wNy0xNDsxMjo1MDo1NyBQTTs1OzI5MTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <declare name="y" type="Integer" array="False" size=""/>
+            <declare name="term" type="Integer" array="False" size=""/>
+            <assign variable="x" expression="1"/>
+            <assign variable="y" expression="0"/>
+            <assign variable="term" expression="0"/>
+            <do expression="y &lt;= 56">
+                <assign variable="term" expression="y + x"/>
+                <output expression="y" newline="True"/>
+                <assign variable="x" expression="y"/>
+                <assign variable="y" expression="term"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>
